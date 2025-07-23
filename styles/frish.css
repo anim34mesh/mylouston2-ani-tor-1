@@ -1,3 +1,96 @@
-h1{
-    background-color: red;
+.box-sizing{
+    background-color:purple;
+    height: 700px;
+    width: 700px;
+    margin: auto;
+    /* normal vaber kori j amra */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    /* grid diye korb */
+    /* display: grid;
+    place-content: center; */
+    /* Using position and transfrom */
+    /* position: relative; */
+
 }
+.content-box{
+    background-color:red;
+    height: 200px;
+    width:200px;
+    box-sizing: content-box;
+    padding: 80px;
+    margin-bottom: 60px;
+    /* position korar khtre bebohrar kora  hoy */
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+
+.border-box{
+    background-color:green;
+     height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 80px;
+}
+/* Position with z-index-BD Flag */
+.flag-green{
+    height: 300px;
+    width: 500px;
+    background-color: green;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flag-rounded-red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+.flag-rounded-white{
+     height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.flag-geen{
+    height: 300px;
+    width: 500px;
+    background-color: green;
+     display: flex;
+    position: relative;
+}
+.flag-runded-red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 4;
+}
+.flag-ronded-white{
+     height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:1;
+}
+/* .flag-formeat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
