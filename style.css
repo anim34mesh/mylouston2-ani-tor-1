@@ -49,6 +49,8 @@
     /* background-color: green;, eita amra bujar jono diyechilam */
     padding: 50px 0;
     gap: 20px;
+      max-width: 1280px;
+    margin:auto;
     
  }
  .upcoming-matches-left{
@@ -74,23 +76,28 @@
     color: black;
  } */
  .upcoming-matches-right{
-    background-color: orange;
+    /* background-color: orange; */
     flex: 1;
  }
  .upcoming-matches-right .card{
     border: 1px solid rgb(232, 232,232);
-    border-radius: 10px;
+    border-radius: 20px;
+ }
+ .upcoming-matches-right .card .card-body{
+  padding: 10px;
  }
  /* banner img */
   .upcoming-matches-right .card img{
-    width:180px;
-    height: 100%;
+    width:100%;
+    height: 180px;
     border-radius:10px 10px 0 0 ;
   }
   .upcoming-matches-right .card .btn{
     background-color: white;
     color: black;
     border: 2px solid black;
+    padding: 8px 17px;
+    margin-top: 10px;
 
   }
   .upcoming-matches-right .card h2{
